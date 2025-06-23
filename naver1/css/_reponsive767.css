@@ -1,0 +1,192 @@
+/* 겔럭시 폴드 & 핸드폰 가로 사이즈 */
+/* 587 ~ 767 */
+@media (max-width: 767px) {
+    /* common */
+    .enter_767{
+        display: block;
+    }
+
+    .inner{
+        width: calc(100% - 50px);
+    }
+    section {
+        padding: 120px 0;
+    }
+
+    header.header .logo img {
+        height: 35px;
+    }
+
+    .headline{
+        font-size: 2rem;
+        padding: 10px 30px;
+    }
+    .sub_headline{
+        font-size: 1.6rem;
+    }
+    .headline_box .enter{
+        display: none;
+    }
+
+    .sc_visual .main_bg{
+        width: 1000px;
+    }
+    .sc_visual .headline_box .headline {
+        font-size: 8vw;
+        font-size: clamp(48px ,8vw, 60px);
+    }
+    .sc_visual .headline_box .desc{
+        font-size: 3vw;
+        font-size: clamp(19px ,3vw, 22px);
+    }
+
+    .sc_con2 .contnt1{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .sc_con2 .inner{
+        gap: 55px;
+    }
+
+    .sc_con3 .reason_1 .content_wrap .content_box >div:not(.card_1){
+        font-size: 1.3rem;
+    }
+    .sc_con3 .reason_2 .content_wrap .img_wrap{
+        position: relative;
+        display: block;
+        width: 100px;
+        background: #efdcff;
+        border: 3px solid #ffffff;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .sc_con3 .reason_2 .content_wrap .img_wrap .img_mo{
+        position: absolute;
+        bottom: 0;
+        left: 55%;
+        transform: translateX(-50%);
+        width: 80%;
+    }
+    .sc_con3 .reason_2 .content_wrap .img_pc{
+        display: none;
+    }
+    .sc_con3 .reason_3 img{
+        margin-bottom: 0;
+    }
+    .sc_con3 .reason_2 .content_wrap .content_box{
+        align-items: center;
+        gap: 15px;
+    }
+
+    .sc_con3 .reason_2 .content_wrap .talk_cover .talk{
+        font-size: 1.3rem;
+        padding: 0 20px;
+    }
+    .sc_con3 .reason_2 .content_wrap .talk_cover .talk:nth-child(2){
+        width: auto;
+    }
+    .sc_con3 .reason_2 .content_wrap .talk_cover{
+        justify-self: center;
+        gap: 15px;
+        text-align: left;
+        margin-top: 0px;
+        padding: 0;
+    }
+    .sc_con3 .reason_2 .talk.t3{
+        font-size: 1.6rem;
+        height: 65px;
+        line-height: 65px;
+        display: block;
+        padding: 0 30px;
+    }
+    .sc_con3 .reason_2 .content_wrap{
+        height: 360px;
+    }
+
+    .sc_con3 .reason_3 .img_mo{
+        display: block;
+    }
+    .sc_con3 .reason_3 .img_pc{
+        display: none;
+    }
+    .sc_con3 .reason_3 .img {
+        padding: 50px 50px;
+    }
+
+    .sc_con4 .headline_box .headline{
+        font-size: 2.5rem;
+    }
+    .sc_con4 .headline_box .sub_headline{
+        font-size: 1.6rem;
+    }
+    .sc_con4 .content_wrap .img_wrap {
+        height: 165px;
+    }
+    .sc_con4 .content_wrap .title_cover {
+        height: 75px;
+    }
+    .sc_con4 .content_wrap .title_cover .title {
+        font-size: 1.3rem;
+    }
+    .sc_con4 .content_wrap .title_cover .age {
+        font-size: 1rem;
+    }
+    .sc_con4 .content_wrap em {
+        width: 30px;
+        height: 30px;
+        font-size: 1.4rem;
+        line-height: 30px;
+    }
+    .sc_con4 .headline_box .link_form {
+        font-size: 1.2rem;
+    }
+
+    .sc_banner .bg{
+        height: 285px;
+    }
+    .sc_banner p {
+        font-size: 1.5rem;
+    }
+
+    .sc_con6 .sub_headline_box .desc{
+        font-size: 1.3rem;
+        min-width: 350px;
+    }
+    .sc_con6 .sub_headline_box .sub_headline{
+        font-size: 1.6rem;
+    }
+    .sc_con6 .brand_list{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .sc_con6 .sub_headline_box .desc{
+        font-size: 1.2rem;
+        min-width: 300px;
+    }
+    .sc_con6 .sub_headline_box .sub_headline {
+        font-size: 1.3rem;
+    }
+    .sc_con5 .content_wrap .content_box {
+        padding: 20px;
+    }
+    .sc_con5 .content_wrap .content_box.left > div{
+        font-size: 1rem;
+    }
+    .sc_con5 .content_wrap .content_box.right .cover{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    form ul li select{
+        padding-left: 15px;
+        padding-right: 40px;
+    }
+
+    .form_wrap__top form ul{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form_wrap__top form ul li {
+        justify-content: center;
+    }
+}

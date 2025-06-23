@@ -1,0 +1,219 @@
+:root {
+    /* form 사이즈 일괄 지정 */
+    --formHeight: 45px;
+}
+
+.sc_visual_sub {
+  width: 100%;
+  padding: 80px 0 40px;
+  margin-top: 75px;
+  background: #faf0e7;
+}
+
+.sc_visual_sub .sc_form{
+  position: static;
+  padding: 0;
+  background: none;
+}
+.sc_visual_sub .form_headline_box {
+  margin-bottom: 25px;
+}
+.sc_visual_sub .headline {
+  font-size: 29px;
+  font-weight: 600;
+}
+.sc_visual_sub .form_area ul {
+  gap: 10px;
+}
+.sc_visual_sub .cost_area .cost_list .cost_item {
+  border-bottom: 1px solid #3e4654;
+}
+.sc_visual_sub .cost_area .cost_list{
+  border-top: 1px solid #3e4654;
+}
+.btn_submit{
+  height: 55px;
+}
+
+/* text_page 텍스트 크기 기본 설정 */
+.text_page{
+  padding: 60px 0;
+}
+.text_page #board{
+  padding: 0;
+}
+.text_page .content_headline {
+  position: relative;
+  width: fit-content;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.3;
+  border-radius: 10px;
+  color: #000000;
+}
+.text_page .content_headline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 105%;
+  height: 3px;
+  background: var(--brandColor);
+}
+
+.text_page .content_box {
+  padding: 40px 0px;
+}
+.sub_all .content_box strong {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2;
+  padding: 15px 0 10px;
+}
+.sub_all .content_box strong::before {
+  content: '｜ ';
+}
+.sub_all .content_box p {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.sub_all .content_box img {
+  display: block;
+  padding: 20px 0;
+}
+.sub_all .content_box b{
+  display: block;
+  padding: 15px 0 5px 0 ;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.sub_all .content_box span{
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 10px 0 20px;
+  color: #444;
+}
+.sub_all .content_box b::before {
+  content: '⦁ ';
+}
+.sub_all .content_box ul {
+  display: block;
+  padding: 15px 0;
+  margin-left: 1.5em;
+}
+.sub_all .content_box li {
+  display: block;
+  font-size: 18px;
+  line-height: 1.8;
+}
+.sub_all .content_box li:not(b li)::before {
+  content: '- ';
+}
+.sub_all .content_box a {
+  display: inline;
+  font-size: 1.15rem;
+  text-decoration: underline;
+  color: #2243ff;
+  font-weight: 300;
+  word-break: break-all;
+}
+.sub_all .content_box table{
+  width: 100%;
+  margin: 10px 0 20px 0;
+}
+.sub_all .content_box th, .sub_all .content_box td {
+  padding: 8px 15px;
+}
+.sub_all .content_box th  {
+  background: #e6e7e9;
+  font-weight: 500;
+}
+.sub_all .content_box td {
+  line-height: 1.3;
+}
+.sub_all .content_box .box{
+  width: 100%;background: #eee;
+  padding: 30px;
+  margin: 10px 0 30px;
+}
+.sub_all .content_box .box::before{
+  content: '💡 ';
+}
+.sub_all .content_box tr {
+  white-space: nowrap;
+}
+.table_reponsive{
+  overflow: auto;
+}
+
+@media (max-width: 959px) {
+  .text_page .content_headline{
+    font-size: 30px;
+  }
+  .sub_all .content_box strong {
+    font-size: 24px;
+  }
+  .sub_all .content_box p, .sub_all .content_box li, .sub_all .content_box a{
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .text_page{
+    margin-top: 75px;  
+  }
+
+  .text_page .content_headline{
+    font-size: 30px;
+    padding: 15px 15px;
+  }
+  .sub_all .content_box strong {
+    font-size: 22px;
+  }
+  .sub_all .content_box p, .sub_all .content_box li, .sub_all .content_box a{
+    font-size: 17px;
+  }
+  .sub_all .content_box table{
+    font-size: 15px;
+  }
+}
+@media (max-width: 586px) {
+  .sc_visual_sub {
+    margin-top: 70px;
+  }
+  .text_page {
+    margin-top: 70px;
+  }
+  .text_page .content_headline {
+    font-size: 27px;
+    padding: 15px 0px;
+  }
+  .text_page .content_box {
+    padding: 20px 0px;
+  }
+  .text_page .content_headline::after {
+    width: 100%;
+  }
+  .sub_all .content_box .box {
+    padding: 20px;
+  }
+  .sub_all .content_box ul {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 430px) {
+
+  .text_page {
+    padding: 30px 0;
+  }
+  .text_page .content_headline{
+    font-size: 24px;
+    padding: 8px 0px;
+  }
+  .sub_all .content_box p, .sub_all .content_box li, .sub_all .content_box a{
+    font-size: 16px;
+  }
+}

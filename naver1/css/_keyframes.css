@@ -1,0 +1,28 @@
+@keyframes fade {
+    0%, 100% {opacity: 0;}
+    50% {opacity: 1;}
+}
+.d_ar {
+animation: fade 3s infinite;
+}
+.d_ar:nth-child(1) {
+animation-delay: 0s 0.2s;
+}
+.d_ar:nth-child(2) {
+animation-delay: 0.5s;
+}
+.d_ar:nth-child(3) {
+animation-delay: 1.1s;
+}
+
+
+
+@keyframes flowRolling {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+

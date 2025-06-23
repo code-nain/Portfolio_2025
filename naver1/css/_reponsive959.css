@@ -1,0 +1,77 @@
+/* 테블릿 */
+/* 768 ~ 959 */
+@media (max-width: 959px) {
+    section{
+        padding: 150px 0;
+    }
+    .headline{
+        font-size: 2rem;
+    }
+    .sub_headline{
+        font-size: 1.6rem;
+    }
+    
+    .sc_visual{
+        padding: 130px 0 90px;
+    }
+    .sc_visual .swiper {
+        margin-bottom: 30px;
+    }
+    .sc_visual .main_bg{
+        width: 680px;
+    }
+
+    .sc_con3 .reason_1 .content_wrap .content_box >div{
+        padding: 30px 25px;
+    }
+    .sc_con3 .reason_3 img{
+        padding: 50px 10px;
+    }
+    .sc_con3 .reason_1 .content_wrap{
+        gap: 15px;
+    }
+    .sc_con3 .reason_1 .content_wrap .content_box >div:not(.card_1){
+        font-size: 1.1rem;
+    }
+    .sc_con3 .reason_1 .content_wrap .content_box .title{
+        font-size: 1.8rem;
+    }
+
+    .sc_con3 .reason_2 .content_wrap .talk_cover .talk{
+        font-size: 1.6rem;
+    }
+    .sc_con3 .reason_2 .content_wrap .talk_cover .talk:nth-child(2){
+        width: 303px;
+    }
+    .sc_con3 .reason_2 .t3{
+        font-size: 1.8rem;
+    }
+
+    .sc_con4 .content_wrap .img_wrap {
+        height: 250px;
+    }
+    
+    .sc_con5 .content_wrap{
+        margin: 55px 0 30px;
+    }
+    .sc_con5 .content_wrap .content_box.right .cover span{
+        width: 180px;
+        height: 180px;
+    }
+
+    .sc_con6 .brand_list .brand_item{
+        width: 130px;
+    }
+
+
+    
+    .form_wrap__top form ul li label:not(.form_wrap__top .privacy_wrap label, .form_wrap__top .privacy_wrap .privacy1, .form_wrap__top .sex_box label){
+        min-width: 70px;
+    }
+    .form_wrap__top form ul li select {
+        font-size: 1.1rem;
+        padding-left: 16px;
+        padding-right: 35px;
+    }
+    
+}

@@ -1,0 +1,186 @@
+/* 핸드폰 */
+/* 아이폰 XR pro */
+/* 360 ~ 430 */
+@media (max-width: 500px) {
+    .sc_con3 .reason_2 .content_wrap .img_wrap{
+        display: none;
+    }
+}
+@media (max-width: 430px) {
+
+    .cate{
+        font-size: 1.4rem;
+    }
+    .headline{
+        font-size: 1.3rem;
+        padding: 10px 30px;
+    }
+    .sub_headline {
+        font-size: 1.2rem;
+    }
+
+    header.header .logo img {
+        height: 30px;
+    }
+    .header .btn_marquee{
+        font-size: 1.1rem;
+        padding: 15px 5px;
+    }
+    
+    .sc_visual .headline_box {
+        margin-bottom: 30px;
+    }
+    .sc_visual .main_bg {
+        width: 200%;
+    }
+    .sc_visual .headline_box .headline{
+        font-size: 43px;
+    }
+    .sc_visual .headline_box .desc{
+        font-size: 17px;
+    }
+    .sc_visual .swiper-inner .swiper-slide img.resize {
+        height: 15px;
+    }
+    .sc_visual .swiper-inner .swiper-slide img.resize2 {
+        height: 20px;
+    }
+
+    .sc_con2 .inner {
+        gap: 40px;
+    }
+    .sc_con2 .contnt1{
+        font-size: 1.2rem;
+    }
+    .sc_con2 .desc{
+        font-size: 1.2rem;
+    }
+
+    .sc_con3 .rs {
+        padding: 80px 0;
+    }
+    .sc_con3 .reason_1 .content_wrap .content_box .title {
+        font-size: 1.4rem;
+    }
+    .sc_con3 .reason_1 .content_wrap .content_box >div:not(.card_1) {
+        font-size: 1rem;
+    }
+    .sc_con3 .reason_2 .talk.t3 {
+        font-size: 1.4em;
+    }
+
+    .sc_con4 .headline_box{
+        gap: 15px;
+    }
+    .sc_con4 .headline_box .desc {
+        text-align: center;
+        font-size: 1rem;
+    }
+    .sc_con4 .content_wrap .content_box {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .sc_con4 .content_wrap .img_wrap {
+        width: 100%;
+        height: 100%;
+    }
+    .sc_con4 .headline_box .link_form{
+        font-size: 1.1rem;
+    }
+    .sc_con4 .content_wrap .title_cover {
+        height: 60px;
+    }
+    .sc_con4 .content_wrap .title_cover .title {
+        font-size: 1.1rem;
+    }
+    .sc_con4 .content_wrap .title_cover .age {
+        font-size: 1rem;
+    }
+
+
+    .sc_con5 .content_wrap .content_box.right .sub_title {
+        font-size: 1.2rem;
+    }
+    .sc_con5 .content_wrap .content_box.right .cover span {
+        font-size: 1rem;
+        width: 140px;
+        height: 140px;
+    }
+    .sc_con5 .ie{
+        padding: 0;
+    }
+
+    .sc_banner p {
+        font-size: 1.2rem;
+    }
+
+
+    .sc_con6 .sub_headline_box .desc {
+        font-size: 1rem;
+        min-width: 245px;
+    }
+    .sc_con6 .sub_headline_box .sub_headline {
+        font-size: 1.2rem;
+    }
+    .sc_con6 .rolling_area .investor_list > .investor_item {
+        width: 200px;
+    }
+    .sc_con6 .brand_list .brand_item {
+        width: 130px;
+    }
+    .sc_con6 .rolling_area{
+        margin: 40px 0;
+    }
+    .sc_con6 .brand_list {
+        margin: 40px 0;
+    }
+    
+    form ul li label:not(.privacy_wrap label, .privacy_wrap .privacy1, .sex_box label){
+        min-width: 70px;
+        font-size: 1rem;
+    }
+    form ul li input[type=text], form ul li input[type=tel] {
+        font-size: 1.3vw;
+        font-size: clamp(18px, 2.3vw, 20px);
+        padding: 13px 10px;
+    }
+    form ul li .sex_cover .sex_box label {
+        width: 49px;
+        height: 49px;
+        line-height: 49px;
+    }
+    form ul li select{
+        height: 49px;
+        font-size: 1.1rem;
+        padding-left: 9px;
+        padding-right: 30px;
+    }
+    .btn_submit{
+        font-size: 1.3rem;
+    }
+
+
+
+    .form_wrap__top form ul li label:not(.form_wrap__top .privacy_wrap label, .form_wrap__top .privacy_wrap .privacy1, .form_wrap__top .sex_box label) {
+        min-width: 55px;
+        text-align: left;
+    }
+    .form_wrap__top form ul li input[type=text], .form_wrap__top form ul li input[type=tel]{
+        font-size: 1rem;
+    }
+    .form_wrap__top form ul li .sex_cover .sex_box label{
+        font-size: 1rem;
+    }
+    .form_wrap__top form ul li select {
+        font-size: 1rem;
+        padding-left: 12px;
+        padding-right: 30px;
+    }
+
+    .form_wrap__top form ul li{
+        gap: 5px;
+    }
+    .form_wrap__top form ul li .sex_cover {
+        gap: 3px;
+    }
+}
