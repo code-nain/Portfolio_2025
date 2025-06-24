@@ -1,0 +1,1816 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>실비보험비교사이트 라이프솔루션</title>
+	<meta name="naver-site-verification" content="a3de3a13a6f312ace0d66fea76c530abf2bd9397" />
+	<meta name="google-site-verification" content="fz0HsMKgHgPIIk4neudwsh6vBEvXGrlDatiAPheB6do" />
+	<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+	<meta name="description" content="실비보험비교사이트 보험료 계산 및 실비보험비교 가능한 라이프솔루션 입니다.">
+	<meta name="author" content="실비보험비교사이트 라이프솔루션">
+	<meta name="keywords" content="실비보험비교사이트, 보험료 계산, 실비보험사이트, 실비보험비갱신형, 실비보험, 실비보험추천, 실비보험비교, 보험비교, 손해보험">
+	<meta name="author" content="실비보험비교사이트 라이프솔루션">
+
+	<meta name="robots" content="all" />
+	<meta name="NaverBot" content="all" />
+	<meta name="Yeti" content="all" />
+	<meta name="googlebot" content="all" />
+
+	<meta name="subject" content="실비보험비교사이트 라이프솔루션" />
+	<meta name="title" content="실비보험비교사이트 라이프솔루션" />
+	<meta name="publisher" content="실비보험비교사이트 라이프솔루션" />
+	<meta name="Other Agent" content="실비보험비교사이트 라이프솔루션" />
+	<meta name="location" content="South Korea" />
+	<meta name="distribution" content="global" />
+	<meta name="rating" content="general" />
+
+	<meta name="twitter:site" content="실비보험비교사이트 라이프솔루션" />
+	<meta name="twitter:title" content="실비보험비교사이트 라이프솔루션" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:description" content="실비보험비교사이트 보험료 계산, 라이프솔루션 입니다." />
+	<meta name="twitter:image" content="./images/thumb.png" />
+	<meta name="twitter:url" content="https://localhost:8088" />
+	
+	<meta itemprop="name" content="실비보험비교사이트 라이프솔루션" />
+	<meta itemprop="description" content="실비보험비교사이트 보험료 계산, 라이프솔루션 입니다." />
+	<meta itemprop="image" content="./images/thumb.png" />
+
+	<meta property="og:locale" content="ko_KR" />
+	<meta property="og:site_name" content="실비보험비교사이트 라이프솔루션" />
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="실비보험비교사이트 라이프솔루션">
+	<meta property="og:description" content="실비보험비교사이트 보험료 계산, 라이프솔루션 입니다.">
+	<meta property="og:url" content="https://localhost:8088">
+	<meta property="og:image" content="./images/thumb.png">
+	<meta property="og:locale" content="ko_KR" />
+	<meta property="og:site_name" content="실비보험비교사이트 라이프솔루션" />
+
+	<link rel="canonical" href="https://localhost:8088">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<link rel="stylesheet" href="./css/link.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/json3@3.3.2/lib/json3.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <style>
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            height: 75px;
+            z-index: 500;
+            transition: 0.2s;
+            background: #fff;
+            border-bottom: 1px solid #eee;
+        }
+        header .inner{
+            height: 100%;
+        }
+        header .gnb_item a.active {
+            color: var(--brandColor);
+        }
+        header.on .gnb_mo {
+            top: 65px;
+            display: block;
+        }
+        header .group_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+        header .group_header .logo_box {
+            display: flex;
+            align-items: center;
+        }
+        header .group_header .logo_box .link_logo {
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+        }
+        header .group_header .gnb_list {
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            text-align: center;
+            transition: 0.2s;
+        }
+        header .group_header #btn_form {
+            height: 42px;
+            padding: 0 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 16px;
+            color: #fff;
+            /* border: 1px solid #fff; */
+            background: var(--costBtncolor);
+            border-radius: 10px;
+        }
+        header .group_header .gnb_list .gnb_item {
+            padding: 0 30px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+        header .group_header .gnb_list .gnb_item a{
+            position: relative;
+            display: block;
+            height: auto;
+            color: #282828;
+        }
+        header .group_header .gnb_list .gnb_item a:hover{
+            color: var(--brandColor);
+        }
+        header .group_header .menu_wrap {
+            width: 25px;
+            height: auto;
+            display: none;
+            z-index: 0;
+        }
+        header .group_header .menu_wrap.toggle-btn .btn_open {
+            display: none;
+        }
+        header .group_header .menu_wrap.toggle-btn .btn_close {
+            display: block;
+        }
+        header .group_header .menu_wrap .btn_close,
+        header .group_header .menu_wrap .btn_open {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        header .group_header .menu_wrap .btn_close {
+            display: none;
+            width: 30px;
+        }
+
+        .gnb_mo {
+            display: none;
+        }
+
+
+        @media (max-width: 1023px) {
+            header .group_header .gnb_list .gnb_item{
+            font-size: 17px;
+            }
+        }
+
+        @media (max-width: 959px) {
+            header .inner .group_header .menu_wrap {
+            display: block;
+            }
+            header .inner .group_header .gnb_list {
+            display: none;
+            }
+            header .group_header #btn_form{
+            display: none;
+            }
+            .gnb_mo {
+            position: absolute;
+            top: -300px;
+            left: 0;
+            width: 100%;
+            height: auto;
+            padding: 20px 40px;
+            background: #fff;
+            border-bottom: 1px solid #eaeaea;
+            transition: top 0.5s;
+            z-index: -1;
+            }
+            .gnb_mo .gnb_list .gnb_item {
+            width: 100%;
+            padding: 25px 0;
+            font-weight: 500;
+            font-size: 21px;
+            color: #555;
+            cursor: pointer;
+            }
+            .gnb_mo .gnb_list .gnb_item:not(:last-child) {
+            border-bottom: 1px solid #ddd;
+            }
+            .gnb_mo .gnb_list .gnb_item :hover {
+            color: var(--brandColor);
+            }
+            .gnb_mo .gnb_list .gnb_item a {
+            width: 100%;
+            }
+        }
+
+
+        @media (max-width: 767px) {
+            header .group_header .menu_wrap button span {
+            width: 100%;
+            }
+            header .gnb_mo {
+            padding: 30px 30px;
+            }
+        }
+
+        @media (max-width: 586px) {
+            header {
+            height: 70px;
+            }
+
+            header .group_header .menu_wrap {
+            width: 20px;
+            }
+            header .group_header .menu_wrap .btn_close {
+            width: 20px;
+            }
+            header .gnb_mo{
+            padding: 10px 30px;
+            }
+            header.on .gnb_mo {
+            top: 58px;
+            }
+            header .group_header .menu_wrap .btn_close, header .group_header .menu_wrap .btn_open {
+            width: 80%;
+            }
+            .gnb_mo .gnb_list .gnb_item{
+            padding: 20px 0;
+            font-size: 17px;
+            }
+            .gnb_mo.on {
+            top: 65px;
+            }
+        }
+
+        @media (max-width: 430px) {
+            header .group_header .logo_box {
+                width: 160px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            header .group_header #btn_form:hover{
+            background: #fff;
+            border: 1px solid var(--brandColor);
+            color: var(--brandColor);
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="notscroll_bg"></div>
+    <header>
+    <div class="inner">
+        <div class="group_header">
+        <h1 class="logo_box">
+            <a href="./" class="link_logo"><img src="./images/logo.png" alt="라이프솔루션"></a>
+        </h1>
+        <ul class="gnb_list">
+            <li class="gnb_item"><a href="./sub.php?menu=1">실비보험이란</a></li>
+            <li class="gnb_item"><a href="./sub.php?menu=2">보험 가입 준비</a></li>
+        </ul>
+        <button id="btn_form">내 보험료 확인하기</button>
+
+        <div class="menu_wrap">
+            <button class="btn_open"><img src="./images/hamburger.svg" alt="메뉴"></button>
+            <button class="btn_close"><img src="./images/close.svg" alt="닫기"></button>
+        </div>
+        
+        </div>
+    </div>
+
+    <div class="gnb_mo">
+        <ul class="gnb_list">
+        <li class="gnb_item"><a href="./sub.php?menu=1">실비보험이란</a></li>
+        <li class="gnb_item"><a href="./sub.php?menu=2">보험 가입 준비</a></li>
+        <li class="gnb_item"><a href="./sub.php?menu=3"><br />
+    <b>Warning</b>:  Undefined array key 2 in <b>D:\xampp\htdocs\naver1\common\header.php</b> on line <b>225</b><br />
+    </a></li>
+        </ul>
+    </div>
+    </header>
+
+    <script>
+    $('header .group_header a').click(function(){
+        $('header .group_header a').removeClass('active');
+        $(this).addClass('active');
+    });
+
+    $('header .menu_wrap').click(function(){
+    if ($('header').hasClass('on')) {
+        $('header').removeClass('on');
+        $("body").removeClass('fixed');
+        $('.notscroll_bg').fadeOut(0);
+        $('.menu_wrap').removeClass('toggle-btn');
+        
+    } else {
+        $('header').addClass('on');
+        $("body").addClass('fixed');
+        $('.notscroll_bg').fadeIn(0);
+        $('.menu_wrap').addClass('toggle-btn');
+    }
+    });
+
+    $(window).resize(function() {
+        if ($(window).width() >= 780) {
+            $('header').removeClass('on');
+            $("body").removeClass('fixed');
+            $('.notscroll_bg').fadeOut(0);
+            $('.menu_wrap').removeClass('toggle-btn');
+        }
+    }).resize();
+
+    $('.notscroll_bg').click(function() {
+    $('header').removeClass('on');
+    $("body").removeClass('fixed');
+    $('.notscroll_bg').fadeOut(0);
+    $('.menu_wrap').removeClass('toggle-btn');
+    });
+
+    $('#btn_form').on('click', function(event) {
+        event.preventDefault(); // 기본 동작 방지
+        var currentUrl = window.location.href;
+        if (currentUrl.includes('sub')) {
+            alert('정보를 입력해주세요.');
+            $("#customer_name").focus();
+        } else {
+            window.location.href = "/naver1";
+        }
+    });
+
+    </script>
+
+    <main>
+        <section class="sc_visual">
+          <img src="./images/main.png" class="main_bg" alt="실비보험">
+          <div class="inner">
+            <!-- <div class="swiper bohumSwiper">
+              <ul class="swiper-inner">
+                <li class="swiper-slide"><img src="./images/bohum/logo_sa.svg" alt="삼성화재" class="resize"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_hd.svg" alt="현대해상" class="resize"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_kb.svg" alt="KB손해보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_db.svg" alt="DB손해보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_me.svg" alt="메리츠화재"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_hw.svg" alt="한화손해보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_lo.svg" alt="롯데손해보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_hg.svg" alt="흥국화재"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_mg.svg" alt="MG손해보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_nh.svg" alt="NH농협손해보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_ai.svg" alt="AIG손해보험" class="resize2"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_ha.svg" alt="하나손해보험"></li>
+  
+                <li class="swiper-slide"><img src="./images/bohum/logo_mi.svg" alt="미래에셋생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_met.svg" alt="매트라이프" class="resize"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_dbs.svg" alt="DB생명" class="resize2"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_ky.svg" alt="교보생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_hws.svg" alt="한화생명" class="resize"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_dgb.svg" alt="DGB생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_dy.svg" alt="동양생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_hgs.svg" alt="흥국생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_kdb.svg" alt="KDB생명" class="resize2"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_li.png" alt="라이나생명" class="resize2"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_sas.svg" alt="삼성생명" class="resize"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_sin.svg" alt="신한라이프"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_abl.svg" alt="ABL생명" class="resize"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_nhs.svg" alt="NH농협생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_ch.svg" alt="처브라이프생명보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_kbs.svg" alt="KB생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_pr.svg" alt="푸르덴셜생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_aia.svg" alt="AIA생명"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_ibk.svg" alt="IBK연금보험"></li>
+                <li class="swiper-slide"><img src="./images/bohum/logo_has.svg" alt="하나생명" class="resize"></li>
+              </ul>
+            </div> -->
+            <div class="visual_area">
+              <div class="headline_box">
+                <h2 class="headline">다채로운<br><b>보험</b> 생활의 시작</h2>
+                <div class="gradcircle"></div>
+                <p class="desc"><b>실비보험</b> 한번에 알아보고 <b>실수없이</b> 혜택받자</p>
+              </div>
+              <!-- main form -->
+    <style>
+        /* form ============================================== */
+        .sc_form {
+            height: auto;
+            width: 100%;
+            background: #f1f1f1;
+        }
+        .sc_form form {
+            margin: 0 auto;
+            position: relative;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            margin-top: 60px;
+        }
+
+        .sc_form form ul {
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            gap: 20px 25px;
+            flex: 1;
+        }
+        .sc_form form ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .sc_form form ul li label:not(.privacy_wrap label, .privacy_wrap .show_btn_db, .sex_box label) {
+        font-size: 1.8vw;
+        font-size: clamp(19px, 1.8vw, 21px);
+        font-weight: 500;
+        min-width: 100px;
+        /* color: #fff; */
+        }
+        .sc_form form ul li input{
+        flex: 1;
+        }
+
+        .sc_form form ul li input[type=radio] {
+        display: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        border: 1px solid #bbb;
+        margin: 0;
+        margin-right: 8px;
+        -webkit-appearance: none;
+            -moz-appearance: none;
+                appearance: none;
+        position: relative;
+        cursor: pointer;
+        }
+        .sc_form form ul li .sex_cover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        }
+        .sc_form form ul li .sex_cover .sex_box label{
+        display: inline-block;
+        height: 54px;
+        width: 54px;
+        text-align: center;
+        line-height: 54px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        }
+        .sc_form form ul li input[type=radio]:checked + label {
+        background: var(--brandColor);
+        color: #fff;
+        }
+        .sc_form form ul li input[type=radio]:not(:checked) + label {
+        background: #fff;
+        color: #777;
+        box-sizing: border-box;
+        border: 1px solid #b8b8b8;
+        }
+        .sc_form form ul li input[type=text], .sc_form form ul li input[type=tel] {
+        border: none;
+        font-size: 1.3vw;
+        font-size: clamp(18px, 2.3vw, 20px);
+        padding: 15px 25px;
+        outline: none;
+        font-family: inherit;
+        background: #fff;
+        border-radius: 6px;
+        width: 100%;
+        border: 1px solid #b8b8b8;
+        }
+        .sc_form form ul li select {
+        font-size: 1.3rem;
+        padding-left: 26px;
+        padding-right: 58px;
+        height: 54px;
+        -webkit-appearance: none;
+            -moz-appearance: none;
+                appearance: none;
+        background: #fff url("./images/tell-arrow.png") no-repeat 85% 50%;
+        background-size: 10px 8px;
+        border: none;
+        border-radius: 6px;
+        border: 1px solid #b8b8b8;
+        }
+        .sc_form form ul li .privacy_wrap {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+        }
+        .sc_form form ul li .privacy_wrap input[type=checkbox] {
+        flex: content;
+        width: 17px;
+        height: 17px;
+        margin: 0;
+        cursor: pointer;
+        accent-color: #bebebe;
+        }
+        .sc_form form ul li .privacy_wrap button,
+        .sc_form form ul li .privacy_wrap label{
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: 0;
+        font-size: 18px;
+        cursor: pointer;
+        }
+
+        .btn_submit {
+        font-size: 1.4rem;
+        font-weight: 600;
+        background: var(--brandColor);
+        color: #fff;
+        padding: 25px 0;
+        width: 100%;
+        height: 60px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 30px;
+        box-shadow: rgba(0, 0, 0, 0.1) 8px 8px 0px;
+        }
+        .btn_submit img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+        }
+
+        input:-internal-autofill-selected {
+        background: #fff;
+        }
+
+    </style>
+
+<style>
+    .form_wrap .form_area{
+        background: linear-gradient(-90deg, rgb(0, 142, 225) 0%, rgb(90, 0, 225) 100%);
+        padding: 30px 30px 25px 30px;
+        border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    }
+    .form_wrap .form_headline_area{
+        display: none;
+    }
+    .form_wrap form {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .form_wrap form ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 25px;
+        flex: 1;
+    }
+    .form_wrap form ul li {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 10px;
+    }
+    .form_wrap form ul li label:not(.privacy_wrap label, .privacy_wrap .show_btn_db, .sex_box label) {
+        font-size: 1.8vw;
+        font-size: clamp(19px, 1.8vw, 21px);
+        font-weight: 500;
+        min-width: 100px;
+    }
+    .form_wrap form ul li input{
+        flex: 1;
+    }
+
+    .form_wrap form ul li input[type=radio] {
+        display: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 100%;
+        border: 1px solid #bbb;
+        margin: 0;
+        margin-right: 8px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        position: relative;
+        cursor: pointer;
+    }
+    .form_wrap form ul li .sex_cover{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+    .form_wrap form ul li .sex_cover .sex_box label{
+        display: inline-block;
+        height: 49px;
+        width: 49px;
+        text-align: center;
+        line-height: 49px;
+        border-radius: 8px;
+        font-size: 1.2rem;
+    }
+    .form_wrap form ul li input[type=radio]:checked + label {
+        background: #fff;
+        color: var(--brandColor);
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 4px, rgba(0, 0, 0, 0.2) 0px 7px 13px -3px, rgba(0, 0, 0, 0.1) 0px -3px 0px inset;
+    }
+    .form_wrap form ul li input[type=radio]:not(:checked) + label {
+        background: #ddd;
+        color: #777;
+        box-sizing: border-box;
+        border: 1px solid #b8b8b8;
+    }
+    .form_wrap form ul li input[type=text], .form_wrap form ul li input[type=tel] {
+        border: none;
+        font-size: 18px;
+        padding: 12px 15px;
+        outline: none;
+        font-family: inherit;
+        background: #fff;
+        border-radius: 6px;
+        width: 100%;
+        border: 1px solid #b8b8b8;
+    }
+    .form_wrap form ul li select {
+        font-size: 1.1rem;
+        padding-left: 22px;
+        padding-right: 45px;
+        height: 49px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+                appearance: none;
+        background: #fff url("./images/tell-arrow.png") no-repeat 85% 50%;
+        background-size: 10px 8px;
+        border: none;
+        border-radius: 6px;
+        border: 1px solid #b8b8b8;
+    }
+    .form_wrap form ul li .privacy_wrap {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        margin-top: 10px;
+    }
+    .form_wrap form ul li .privacy_wrap input[type=checkbox] {
+        flex: content;
+        width: 17px;
+        height: 17px;
+        margin: 0;
+        cursor: pointer;
+        accent-color: var(--brandColor);
+    }
+    .form_wrap form ul li .privacy_wrap button,
+    .form_wrap form ul li .privacy_wrap label{
+        margin: 0;
+        padding: 0;
+        background: none;
+        border: 0;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .form_wrap .btn_submit {
+        font-size: 1.3rem;
+        font-weight: 600;
+        background: #444;
+        color: #fff;
+        margin: 0 auto;
+        width: 350px;
+        height: 60px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 30px;
+    }
+    .form_wrap .btn_submit img{
+        width: 30px;
+        height: 30px;
+        margin-bottom: 5px;
+    }
+
+    .form_wrap input:-internal-autofill-selected {
+        background: #fff;
+    }
+
+    .form_wrap__btm .headline_box{
+        gap: 5px;
+    }
+    .form_wrap__btm .sub_headline {
+        color: #666;
+    }
+
+    @media (max-width: 959px) {
+        .form_wrap form ul {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 15px;
+        }
+        .form_wrap form ul li {
+            justify-content: center;
+        }
+    }
+    @media (max-width: 586px) {
+        .form_wrap .form_area {
+            padding: 30px 20px 25px 20px;
+        }
+        .form_wrap form ul li label:not(.privacy_wrap label, .privacy_wrap .show_btn_db, .sex_box label) {
+            min-width: 75px;
+        }
+        .form_wrap form ul li input[type=text], .form_wrap form ul li input[type=tel] {
+            font-size: 17px;
+        }
+        .form_wrap form ul li select {
+            font-size: 1.1rem;
+            padding-left: 15px;
+            padding-right: 35px;
+        }
+        .form_wrap .btn_submit {
+            font-size: 1.2rem;
+        }
+        .form_wrap .btn_submit img {
+            width: 25px;
+            height: 25px;
+        }
+
+        .form_wrap form ul li .privacy_wrap button, .form_wrap form ul li .privacy_wrap label{
+            font-size: 16px;
+        }
+
+        .form_wrap__btm form ul li label:not(.privacy_wrap label, .privacy_wrap .show_btn_db, .sex_box label) {
+            min-width: 80px;
+        }
+        .form_wrap__btm form ul li select{
+            font-size: 1.1rem;
+            padding-left: 17px;
+            padding-right: 38px;
+        }
+        .form_wrap__btm form ul li input[type=text], .form_wrap__btm form ul li input[type=tel]{
+            font-size: 17px;
+        }
+        .form_wrap__btm .btn_submit {
+            font-size: 1.3rem;
+        }
+        .form_wrap__btm .btn_submit img {
+            width: 25px;
+            height: 25px;
+        }
+    }
+    @media (max-width: 430px) {
+        .form_wrap form ul li label:not(.privacy_wrap label, .privacy_wrap .show_btn_db, .sex_box label) {
+            font-size: 17px;
+            min-width: 60px;
+        }
+        .form_wrap form ul li input[type=text], .form_wrap form ul li input[type=tel] {
+            border: none;
+            font-size: 15px;
+            padding: 9px 15px;
+        }
+        .form_wrap form ul li .sex_cover .sex_box label{
+            width: 38px;
+            height: 38px;
+            line-height: 38px;
+            font-size: 17px;
+        }
+        .form_wrap form ul li select{
+            height: 38px;
+            font-size: 1rem;
+            padding-left: 10px;
+            padding-right: 24px;
+        }
+        .form_wrap .btn_submit {
+            font-size: 1.1rem;
+            max-width: 280px;
+            height: 48px;
+        }
+
+
+        .form_wrap__btm form ul li label:not(.privacy_wrap label, .privacy_wrap .show_btn_db, .sex_box label) {
+            font-size: 17px;
+            min-width: 65px;
+        }
+        .form_wrap__btm form ul li input[type=text], .form_wrap__btm form ul li input[type=tel]{
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+        .form_wrap__btm form ul li .sex_cover .sex_box label {
+            height: 41px;
+            width: 41px;
+            line-height: 41px;
+            font-size: 1rem;
+        }
+        .form_wrap__btm form ul li select {
+            font-size: 1rem;
+            height: 41px;
+        }
+        .form_wrap__btm form ul li .privacy_wrap button, .form_wrap__btm form ul li .privacy_wrap label {
+            font-size: 16px;
+        }
+        .form_wrap__btm .btn_submit {
+            font-size: 1.2rem;
+            height: 50px;
+        }
+    }
+
+    /* hover */
+    @media (min-width: 768px) {
+        .form_wrap .btn_submit:hover {
+            background: #222;
+        }
+    }
+</style>
+
+
+<div class="form_wrap" id="form">
+    <form action="" method="post" target="_self" name="consult_frm" id="pure-form">
+        <ul>
+        <li>
+            <label for="customer_name">이름</label>
+            <input type="text" id="customer_name" name="customer_name" class="form-name" placeholder="예) 홍길동" maxlength="8" onkeyup="characterCheck(this)" onkeydown="characterCheck(this)">
+            <div class="sex_cover">
+            <div class="sex_box">
+                <input type="radio" id="customer_sex_men" name="customer_sex" value="1" checked>
+                <label for="customer_sex_men">남</label>
+            </div>
+            <div class="sex_box">
+                <input type="radio" id="customer_sex_girl" name="customer_sex" value="2">
+                <label for="customer_sex_girl">여</label>
+            </div>
+            </div>
+        </li>
+        <li>
+            <label for="customer_birth">생년월일</label>
+            <input type="tel" id="customer_birth" name="customer_birth" class="form-birth" placeholder="예) 900530" maxlength="8" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+        </li>
+        <li>
+            <label for="mobile2">전화번호</label>
+            <div class="tel_cover">
+            <select id="mobile1" name="mobile1">
+                <option value="010">010</option>
+                <option value="011">011</option>
+                <option value="016">016</option>
+                <option value="017">017</option>
+                <option value="018">018</option>
+                <option value="019">019</option>
+            </select>
+            </div>
+            <input type="tel" id="mobile2" name="mobile2" maxlength="8" placeholder="'-'를 제외해주세요" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+        </li>
+        <li>
+            <div class="privacy_wrap">
+            <input type="checkbox" name="agree" id="check-box" tabindex="0" checked>
+            <label for="check-box" class="privacy_label">개인정보수집 및 활용동의</label>
+            <button type="button" class="privacy1">[보기]</button>
+            </div>
+        </li>
+        </ul>
+        <button type="button" id="bohum_send" class="btn_submit">내 보험료 확인 신청하기<img src="./images/search.svg" alt="보험료확인"></button>
+    </form>
+</div>
+
+            </div>
+            <svg class="svg_down_arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.69 42.1" aria-hidden="true">
+                <defs>
+                  <style>
+                    .d_ar {fill: none; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2px; opacity: 0.6;}
+                  </style>
+                </defs>
+                <g>
+                  <polyline class="d_ar da1" stroke="#4c4c4c" points="29.69 1 15.34 12.34 1 1"/>
+                  <polyline class="d_ar da2" stroke="#4c4c4c" points="29.69 15.38 15.34 26.72 1 15.38"/>
+                  <polyline class="d_ar da3" stroke="#4c4c4c" points="29.69 29.76 15.34 41.1 1 29.76"/>
+                </g>
+            </svg> 
+          </div>
+        </section>
+
+        <section class="sc_con2">
+          <div class="inner">
+            <h2 class="blind">실비보험이란?</h2>
+            <div class="headline_box">
+              <h3 class="headline">실비보험? 실손의료보험?</h3>
+              <p class="sub_headline">실비보험을 들려고 했더니<br>단어부터 헷갈리셨나요?</p>
+            </div>
+            <strong class="contnt1">실비보험 = 실손보험 = 실손의료보험</strong>
+            <p class="desc">실비보험이란?<br> 입원, 처방조제 비용 등 <br class="enter_500">본인이 부담한 의료비를 보상하는 상품</p>
+          </div>
+        </section>
+
+        <section class="sc_con3">
+          <h2 class="blind">실비보험이 필요한 이유</h2>
+          <div class="reason_1 rs ">
+            <div class="inner">
+              <div class="headline_box">
+                <em class="cate ct1">실비보험이 필요한 이유 1</em>
+                <h3 class="headline">넓은 보장 범위,<br class="enter"> 낮은 보험 가격</h3>
+                <p class="sub_headline">아파서! 다쳐서! 부담되는 병원치료비<br>든든하게 보장받으세요.</p>
+              </div>
+              <div class="content_wrap">
+                <div class="content_box box1">
+                  <div class="card_1">
+                    <em class="cate_2">넓은 보장 범위</em>
+                    <strong class="title">급여 비급여 선택가능</strong>
+                    <span class="subject">급여 / 비급여 + 3대 비급여(특약)</span>
+                  </div>
+                  <div class="card_2">
+                    <span>급여 : 상해 + 질병</span>
+                  </div>
+                  <div class="card_2">
+                    <span>비급여 : 상해 + 질병 + 3대 비급여(특약)</span>
+                  </div>
+                </div>
+                <div class="content_box box2">
+                  <div class="card_1">
+                  <em class="cate_2">낮은 보험 가격</em>
+                    <strong class="title">보험료 차등제</strong>
+                    <p>비급여 보험료를 적게 수령하면 <br> 보험료가 내려간다!</p>
+                  </div>
+                  <div class="card_2">
+                    <p>보험료 수령이 많으면 보험료 상승</p>
+                  </div>
+                  <div class="card_3">
+                    <p>보험료 수령이 적으면 보험료 할인</p>
+                  </div>
+                </div>
+              </div>
+              <span class="ie">* 3대 비급여 : 도수치료, 체외충격파치료, 증식치료 / 주사료 / 자기공명영상진단</span>
+            </div>
+          </div>
+
+          <div class="reason_2 rs">
+              <div class="inner">
+              <div class="headline_box">
+                <em class="cate ct2">실비보험이 필요한 이유 2</em>
+                <h3 class="headline">건강보험이 보장하지 않는 <br class="enter_500">의료비 보장</h3>
+                <p class="sub_headline">고액인 비급여 의료비, <br class="enter_500">커지는 지출 부담을 줄여요.</p>
+              </div>
+              <div class="content_wrap">
+                <div class="content_box box1">
+                  <div class="talk_cover">
+                    <p class="talk">나는 원래 병원에 잘 가지 않는데...</p>
+                    <p class="talk">괜히 돈 버리는거 아니야?</p>
+                  </div>
+                  <img src="./images/reason2.png" class="img_pc" alt="고민하는 고객">
+                  <div class="img_wrap">
+                    <img src="./images/reason2_m.png" class="img_mo" alt="고민하는 고객">
+                  </div>
+                </div>
+                <p class="talk t3">미래에 큰 의료비를 지출할 수도 있어요! </p>
+                <p class="talk t3">고액인 비급여 의료비,<br class="enter_500"> 실비 보험으로 대비하세요</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="reason_3 rs">
+              <div class="inner">
+              <div class="headline_box">
+                <em class="cate ct3">실비보험이 필요한 이유 3</em>
+                <h3 class="headline">최대 100세까지 길~게 보장!</h3>
+                <p class="sub_headline">아파서! 다쳐서! 부담되는 병원치료비<br>든든하게 보장받으세요</p>
+              </div>
+              <img src="./images/100year.png" class="img_pc" alt="100세까지 보장">
+              <img src="./images/100year_mo.png" class="img_mo" alt="100세까지 보장">
+            </div>
+          </div>
+        </section>
+
+        <section class="sc_con4">
+          <div class="inner">
+            <div class="headline_box">
+              <h2 class="headline">어떤 실비보험에<br>가입해야 할까?</h2>
+              <h3 class="sub_headline">실비보험의 종류</h3>
+              <p class="desc">연령, 병력에 따라 가입 대상자와 <br class="enter_767">보장 범위⋅한도가 달라져요. </p>
+              <button type="button" class="link_form">내 실비보험 확인하기</button>
+            </div>
+            <div class="content_wrap">
+              <div class="content_box">
+                <em>1</em>
+                <div class="img_wrap">
+                  <img src="./images/silbe.jpeg" alt="실비보험">
+                </div>                
+                <div class="title_cover">
+                  <p class="title">실비보험</p>
+                  <p class="age">~최대 70세까지</p>
+                </div>
+              </div>
+              <div class="content_box">
+                <em>2</em>
+                <div class="img_wrap">
+                  <img src="./images/silber.jpg" alt="노후 실비보험">
+                </div>
+                <div class="title_cover">
+                  <p class="title">노후 실비보험</p>
+                  <p class="age">50세~최대 75세까지</p>
+                </div>
+              </div>
+              <div class="content_box">
+                <em>3</em>
+                <div class="img_wrap">
+                  <img src="./images/yubeung.jpg" alt="유병력자 실비보험">
+                </div>
+                <div class="title_cover">
+                  <p class="title">유병력자 실비보험</p>
+                  <p class="age">치료 이력 있거나 <br>경증 만성질환자</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="sc_con5">
+          <div class="inner">
+            <div class="headline_box">
+              <h2 class="headline">실비보험 세대?</h2>
+              <p class="sub_headline">1세대, 2세대 ... 4세대 실비보험?</p>
+            </div>
+
+            <div class="content_wrap">
+              <div class="content_box left">
+                <span class="title">1세대</span>
+                <div>
+                  <p class="desc">2009년 9월 전에 <br class="enter">판매했던 상품</p>
+                  <span>자기부담금 0%</span>
+                </div>
+              </div>
+              <div class="content_box left">
+                <span class="title">2세대</span>
+                <div>
+                  <p class="desc">2009년 10월 ~ <br class="enter">2017년 3월까지 판매</p>
+                  <span>자기부담금 10~20%</span>
+                </div>
+              </div>
+              <div class="content_box left">
+                <span class="title">3세대</span>
+                <div>
+                  <p class="desc">2017년 4월 ~ <br class="enter">2021년 6월까지 판매</p>
+                  <span>자기부담금 20~30%</span>
+                </div>
+              </div>
+              <div class="content_box right">
+                <span class="title">4세대</span>
+                <p class="sub_title">누가 4세대를 가입해야 할까요?</p>
+                <div class="cover">
+                  <span>2021년 7월 이후에<br>신규 가입한다면</span>
+                  <span>현재 갱신 보험료가<br>부담된다면</span>
+                  <span>병원에 가는 횟수가<br>많지 않다면</span>
+                  <span>불임, 뇌질환의<br>가족력이 있다면</span>
+                </div>
+                <div>
+                  <p class="desc">2021년 7월 ~ 현재 판매중</p>
+                  <span>자기부담금 20~30%</span>
+                </div>
+              </div>
+            </div>
+            <p class="ie">* 자기부담금 : 보상해 주는 의료비 중 보험계약자가 직접 부담하는 금액</p>
+            <p class="ie">* 자세한 내용은 손해보험협회공시실 홈페이지 참고</p>
+          </div>
+        </section>
+
+        <section class="sc_banner">
+          <div class="bg"></div>
+            <div class="inner">
+              <p>보장내용이 <b>표준화</b> 된 4세대 실비보험
+              <br>보험료가 적은 상품을 신청하는게 이득!<br> </p>
+            </div>
+        </section>
+
+        <section class="sc_con6">
+          <div class="inner">
+            <div class="headline_box">
+              <h2 class="headline">비교하고 선택하세요</h2>
+            </div>
+            <div class="sub_headline_box">
+              <p class="desc">30여개 보험사 100여개 보험상품</p>
+              <p class="sub_headline">라이프솔루션과 함께라면<br>확실한 1:1 맞춤 플랜이 가능합니다</p>
+            </div>
+            <ul class="brand_list">
+              <li class="brand_item"><img src="./images/logo_aia.png" alt="AIA 생명"></li>
+              <li class="brand_item"><img src="./images/logo_axa.png" alt="AXA 손해보험"></li>
+              <li class="brand_item"><img src="./images/logo_db.png" alt="DB 손해보험"></li>
+              <li class="brand_item"><img src="./images/logo_hd.png" alt="현대해상"></li>
+              <li class="brand_item"><img src="./images/logo_hg1.png" alt="흥국화재"></li>
+              <li class="brand_item"><img src="./images/logo_hw.png" alt="한화 손해보험"></li>
+              <li class="brand_item"><img src="./images/logo_kb.png" alt="KB 손해보험"></li>
+              <li class="brand_item"><img src="./images/logo_let.png" alt="롯데 손해보험 let"></li>
+              <li class="brand_item"><img src="./images/logo_me.png" alt="meritz 메리츠화재"></li>
+              <li class="brand_item"><img src="./images/logo_mg.png" alt="MG 손해보험"></li>
+              <li class="brand_item"><img src="./images/logo_nh.png" alt="NH 농협손해보험"></li>
+              <li class="brand_item"><img src="./images/logo_sa.png" alt="삼성화재"></li>
+            </ul>
+          </div> 
+        </section>
+
+
+        <section class="sc_form">
+          <div class="form_wrap__btm" id="form">
+            <div class="headline_box">
+              <h2 class="headline">실비보험 가격비교 & 상담신청</h2>
+              <p class="sub_headline">나에게 딱 맞는 실비보험 상품만!</p>
+            </div>
+            <div class="inner">
+              <form action="" method="post" target="_self" name="consult_frm" id="pure-form__btm">
+                <ul>
+                  <li>
+                    <label for="customer_name">이름</label>
+                    <input type="text" id="customer_name__btm" name="customer_name__btm" class="form-name" placeholder="예) 홍길동" maxlength="8" onkeyup="characterCheck(this)" onkeydown="characterCheck(this)">
+                    <div class="sex_cover">
+                      <div class="sex_box">
+                        <input type="radio" id="customer_sex_men__btm" name="customer_sex__btm" value="1" checked>
+                        <label for="customer_sex_men__btm">남</label>
+                      </div>
+                      <div class="sex_box">
+                        <input type="radio" id="customer_sex_girl__btm" name="customer_sex__btm" value="2">
+                        <label for="customer_sex_girl__btm">여</label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <label for="customer_birth">생년월일</label>
+                    <input type="tel" id="customer_birth__btm" name="customer_birth" class="form-birth" placeholder="예) 900530" maxlength="8" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                  </li>
+                  <li>
+                    <label for="mobile2">전화번호</label>
+                    <div class="tel_cover">
+                      <select id="mobile1" name="mobile1__btm">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="016">016</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                        <option value="019">019</option>
+                      </select>
+                    </div>
+                    <input type="tel" id="mobile2__btm" name="mobile2" maxlength="8" placeholder="'-'를 제외해주세요" oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                  </li>
+                  <li>
+                    <div class="privacy_wrap">
+                    <input type="checkbox" name="agree" id="check-box__btm" tabindex="0" checked>
+                      <label for="check-box" class="privacy_label">개인정보수집 및 활용동의</label>
+                      <button type="button" class="privacy1">[보기]</button>
+                    </div>
+                  </li>
+                </ul>
+                <button type="button" id="bohum_send__btm" class="btn_submit">내 보험료 확인 신청하기<img src="./images/search.svg" alt="보험료확인"></button>
+              </form>
+            </div>
+          </div>
+        </section>
+
+    </main>
+      
+    <style>
+        .bottom_wrap {width: 100%; padding: 50px 0; background: #3d3d3d; color: #fff;}
+        .bottom_wrap .inner {}
+        .bottom_wrap h2 {font-size: 1.5rem; font-weight: bold; margin-bottom: 10px;}
+        .bottom_wrap h2:before {content:""; margin-right: 14px; height: 50%; border: 2px solid #ffd800;}
+        .bottom_wrap ul {padding-left: 15px; line-height: 2rem; font-size: 1.1rem;}
+
+        @media (max-width: 768px) {
+            .bottom_wrap h2{
+                font-size: 1.3rem;
+            }
+            .bottom_wrap ul {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .inner {
+                width: calc(100% - 30px);
+            }
+            .bottom_wrap ul {
+                font-size: 2.6vw;
+                font-size: clamp(10px ,2.5vw, 16px);
+                padding: 0;
+            }
+            .bottom_wrap ul {
+                line-height: 1.8;
+            }
+        }
+        @media (max-width: 620px) {
+        }
+        @media (max-width: 500px) {
+            .bottom_wrap h2{
+                font-size: 1.3rem;
+            }
+            /* .bottom_wrap ul {
+                font-size: 0.9rem;
+            } */
+        }
+    </style>
+
+    <div class="bottom_wrap">
+        <div class="inner">
+            <h2>필수 안내사항</h2>
+            <ul>
+                <li>※ 보험계약자가 기존 보험계약을 해지하고 새로운 보험계약을 체결하는 과정에서</li>
+                <li>① 질병이력, 연령증가 등으로 가입이 거절되거나 보험료가 인상될 수 있습니다.</li>
+                <li>② 가입 상품에 따라 새로운 면책기간 적용 및 보장 제한 등 기타 불이익이 발생할 수 있습니다.</li>
+                <li>※ 보험 계약을 체결하기 전에는 상품 설명서 및 약관을 반드시 읽어보시기 바랍니다.</li>
+                <li>※ 인스밸리 보험대리점 (대리점등록번호 : 2001048405)</li>
+                <li>※ 본 광고는 광고심의기준을 준수하였으며, 유효기간은 심의일로부터 1년입니다.</li>
+                <li>※ 인스밸리 준법감시필 제 2407-광고D-0005(2024.07.17~2025.07.16)</li>
+            </ul>
+        </div>
+    </div>
+
+    <style>
+            footer {width: 100%; position: relative; z-index: 11; background: #282a29; padding: 10px 0; color : #999; padding: 30px 0; font-size: 0.9rem;}
+            footer .inner {position: relative;  text-align: left;}
+            footer ul li {padding: 10px 0; line-height: 1.2rem;}
+            footer span {cursor: pointer; margin-left: 10px;}
+
+            @media (max-width: 768px) {
+            footer .inner {position: relative;  text-align: center;}
+            }
+
+    </style>
+
+    <footer>
+        <div class="inner">
+        <ul>
+            <li>광고대행사 : ㈜쇼엠은/는 페이지 제작 및 광고 대행만을 진행하며, 보험상품 판매에 직접적인 관여를 하지 않습니다.<br>동 상품광고는 관련 법령 및 내부통제기준에 따른 광고 관련 절차를 준수하여 작성되었음을 안내 드립니다.</li>
+            <li>사업자등록번호 : 318-87-00348 | 담당자 : 남현석               </li>
+            <li>Copyright (c) (주)쇼엠 All rights reserved.<a href="javascript:" class="privacy2" style="color: #999;">&nbsp;&nbsp;&nbsp;개인정보처리방침</a></li>
+        </ul>
+        </div>
+    </footer>
+
+    <div class="pri_modal_wrap">
+        <div class="pri_modal_inner">
+            <div class="agree_close">
+                <div></div>
+                <div></div>
+            </div>
+            <h3>개인정보수집 및 이용동의 / 개인정보 제3자 제공 동의</h3>
+            <br>
+            <div class="pri_modal_txt">
+                <p>
+                    1. 개인정보 수집 및 이용의 목적
+                    <br><br>
+                    ㈜인스밸리(이하 '회사')는 회사가 제공하는 해당페이지에서 안내하는 상품 안내, 상품 가입, 비교견적 상담 등의 서비스 제공 및 신규 서비스의 개발 등의 목적으로 최소한으로 개인정보를 수집하고 있습니다.
+                    <br><br>
+                    2. 수집하는 개인정보의 범위 및 수집방법
+                    <br><br>
+                    가. 수집하는 개인정보의 범위 <br>
+                    회사에서는 귀하에게 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.<br>
+                    - 필수항목 : 성명, 성별, 연락처, 생년월일,  IP Address, 참여일시, 유입경로(참여매체) 등
+                    <br><br>
+                    나. 수집방법 <br>
+                    회사는 귀하가 서비스를 이용하실 때 필수적인 정보를 온라인 상에서 입력 받고 있습니다. 또한 서비스 내에서의 설문조사나 이벤트 행사 시 통계분석이나 경품 제공 등을 위해 선별적으로 개인정보 입력을 요청할 수 있습니다. 
+                    <br><br>
+                    3. 만14세미만 아동은 회사가 제공하는 해당페이지 가입 및 서비스를 이용할 수 없습니다.
+                    <br><br>
+                    4. 개인정보의 보유 및 이용 기간
+                    <br><br>
+                    회사는 이용자의 개인정보를 원칙적으로 개인정보의 수집 및 이용목적이 달성되면 지체 없이 파기합니다. 단, 서비스가 진행되는 동안 이용할 수 있고 개인정보를 수집 동의일로부터 5년 간 보유 활용할 수 있습니다.
+                    <br><br>
+                    5. 동의를 거부할 권리가 있다는 사실과 동의 거부에 따른 불이익 내용 고지
+                    <br><br>
+                    이용자는 회사에서 필수로 수집하는 개인정보에 대해 동의를 거부할 권리가 있으며, 필수항	목에 대한 동의 거부 시에는 일부 서비스 이용이 제한됩니다
+                </p>
+            </div>
+        <div class="pri_modal_inner1">
+            <h3>개인정보 제3자 제공 동의</h3>
+            <div class="pri_modal_txt1">
+            <p>
+
+                1. 개인정보를 제공받는 자<br>
+                <br>
+                - ㈜인스밸리<br>
+                - 위 회사와 모집위탁계약을 체결한 자(설계사,대리점)<br>
+                <br><br>
+                2. 개인정보를 제공받는 자의 개인정보 이용 목적
+                <br><br>
+                - 상품/서비스 소개 및 상담, 광고를 통한 개인정보 취급 및 보관, 광고 / 마케팅 업무대행
+                <br><br>
+                3. 제공하는 개인정보의 목록
+                <br><br>
+                - 회사가 수집하는 정보 일체
+                <br><br>
+                4. 개인정보를 제공받는 자의 개인정보 보유 및 이용기간
+                <br><br>
+                - 수집 및 동의일로부터 5년
+                <br><br>
+                5. 제3자 제공에 대한 거부의 권리
+                <br><br>
+                이용자는 개인정보의 제3자 제공에 대하여 거부할 수 있으며 거부시 일부 서비스 이용에 제한을 받을 수 있습니다.
+            </p>
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .pri_modal_wrap h3 {background:#000; color:yellow; padding:15px; text-align:center;}
+
+        .pri_modal_wrap{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 99999999999; display: none;}
+
+        .pri_modal_inner{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);width: 750px; height: 500px; background: #eee; border: 10px solid #ccc; overflow-X:hidden; overflow-y: scroll;}
+        .pri_modal_txt p{
+            padding: 20px; line-height:1.3rem; 
+        }
+        .pri_modal_txt1 p{
+            padding: 20px; line-height:1.2rem; 
+        }
+        .agree_close {
+            position: sticky;
+            width: 30px;
+            height: 30px;
+            top: 8px;
+            left:670px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pri_modal_inner h3 {
+            margin-top: -30px;
+        }
+
+        .agree_close > div{
+            width: 3px;
+            height: 30px;
+            background: #aaa;
+            position: absolute;
+        }
+        .agree_close div {
+            transform: rotate(45deg);
+        }
+        .agree_close div:last-child {
+            transform: rotate(-45deg);
+        }
+
+        .touch-none {touch-action:none; height: 100%; min-height: 100%; overflow:hidden;}
+
+    </style>
+
+    <script>
+    $('.agree_close').click(function(){
+        $('.pri_modal_wrap').hide();
+        $('body').removeClass('touch-none');
+    })
+    $('.privacy1').click(function(){
+        $('.pri_modal_wrap').show();
+        $('body').addClass('touch-none');
+    })
+
+    $('.pri_modal_wrap').click(function(){
+        $('.pri_modal_wrap').hide();
+        $('body').removeClass('touch-none');
+    })
+
+    $('.pri_modal_inner').click(function(e){
+        e.stopPropagation();
+    })
+    </script>
+
+    <div class="pri_modal_wrap2">
+        <div class="pri_modal_inner2">
+            <div class="agree_close2">
+                <div></div>
+                <div></div>
+            </div>
+            <h3>개인정보처리방침</h3>
+            <br>
+            <div class="pri_modal_txt2">
+                <p>
+                    1.개인정보의 처리 목적
+                    <br><br>
+                    ㈜인스밸리(이하 '회사')는 회사가 제공하는 해당페이지에서 안내하는 상품 안내, 상품 가입, 비교견적 상담 등의
+                    서비스 제공 및 신규 서비스의 개발 등의 목적으로 최소한으로 개인정보를 수집하고 있습니다.
+                    <br><br>
+                    2. 수집하는 개인정보의 범위 및 수집방법
+                    <br><br>
+                    가. 수집하는 개인정보의 범위<br>
+                    1) 회사에서는 귀하에게 서비스 제공을 위해서 아래와 같은 개인정보를 수집하고 있습니다.<br>
+                    - 필수항목 : 성명, 연락처, 생년월일, IP Address, 참여일시, 유입경로(참여매체) 등<br>
+                    2) 개인정보 제공자는 해당 정보에 대한 동의를 거부할 수 있습니다.
+                    다만, 이에 대한 동의를 하시지 않을 경우에는 해당페이지 내 서비스
+                    또는 상품에 대한 안내를 받지 못할 수 있음을 알려드립니다.
+                    <br><br>
+                    나. 수집방법<br>
+                    회사는 귀하가 서비스를 이용하실 때 필수적인 정보를 온라인 상에서 입력 받고 있습니다.<br>
+                    또한 서비스 내에서의 설문조사나 이벤트 행사 시 통계분석이나 경품 제공 등을 위해
+                    선별적으로 개인정보 입력을 요청할 수 있습니다.<br>
+                    <br><br>
+                    다. 가명정보의 처리<br>
+                    회사는 수집한 정보 중 가명정보는 통계작성, 과학적 연구, 공익적 기록보존
+                    등을 위하여 귀하의 동의 없이 처리할 수 있습니다.
+                    <br><br>
+                    3. 개인정보의 보유 및 이용기간<br>
+                    1) 회사가 수집하는 개인정보의 보유 및 처리 기간은 정보주체가
+                    회사의 정보주체 또는 회원으로써 회사에 제공하는 서비스를
+                    이용하는 동안 회원 탈퇴를 요청하거나 개인정보의 수집 이용 등에
+                    대한 동의를 철회할 때까지 보존합니다.<br>
+                    2) 단, 상법 등 법령의 규정에 의하여 보존할 필요성이 있는 경우에는 예외로 합니다.<br>
+                    3)회사가 처리하는 개인정보는 수집∙이용 목적으로 명시한 범위 내에서 처리하며,
+                    개인정보보호법 및 관련 법령에서 정하는 보유기간을 준용하여 이행하고 있습니다.<br>
+                    4) 회사는 매년 1 회 이상 수집∙이용 목적 및 수집한 개인정보의 항목
+                    및 이를 제공받은 자와 제공 목적 및 제공한 개인정보의 항목을 통지합니다.
+                    <br><br>
+                    4. 개인정보의 파기절차 및 방법
+                    <br><br>
+                    가. 파기절차<br>
+                    회사는 원칙적으로 개인정보의 보유기간이 경과했거나
+                    처리목적이 달성된 경우에는 지체없이 해당 개인정보를 파기합니다.
+                    다만, 다른 법률에 따라 보존하여야 하는 경우에는 그러하지 않습니다.
+                    <br><br>
+                    나. 파기방법<br>
+                    - 전자적 파일형태로 저장된 개인정보 : 불가능한 방법으로 영구삭제<br>
+                    - 전자적 파일형태 외의 기록물, 인쇄물, 서면, 그 밖의 기록매체에 저장된 개인정보 : 파쇄 또는 소각
+                    <br><br>
+                    다. 장기미이용고객의 개인정보 파기<br>
+                    회사는 5년의 기간 동안 서비스를 이용하지 아니하는 이용자의 개인정보를
+                    즉시 파기하거나 별도로 관리하는 방식으로 처리합니다. 다만, 이용자의
+                    요청이 있는 경우나 다른 법령에 따라 이용자의 개인정보를 보존해야 하는
+                    경우에는 그 보존기간이 경과할 때까지 분리하여 별도로 저장∙관리합니다.
+                    <br><br>
+                    5. 개인정보의 제3자 제공
+                    <br><br>
+                    회사는 수집∙보유하고 있는 개인정보를 이용자의 동의 없이는 제3자에게 제공하지 않으며,
+                    다음의 경우에 예외적으로 제3자에게 개인정보를 제공할 수 있습니다.
+                    <br><br>
+                    - 정보주체로부터 별도의 동의를 받은 경우<br>
+                    - 법률에 특별한 규정이 있거나 법령상 의무를 준수하기 위하여 불가피한 경우
+                    <br><br>
+                    6. 개인정보 처리의 위탁
+                    <br><br>
+                    회사는 서비스의 원활한 제공을 위해 개인정보를 다음과 같이 위탁처리하고 있으며,
+                    관계 법령에 따라 위탁계약 시 개인정보가 안전하게 관리될 수 있도록 필요한 사항을 규정하고 있습니다.<br>
+                    [위탁대상자(수탁자)]<br>
+                    &nbsp;&nbsp;- ㈜인스밸리<br>
+                    &nbsp;&nbsp;- 위 회사와 모집위탁계약을 체결한 자(설계사, 대리점)<br>
+                    위탁업무 내용 : 광고를 통한 개인정보 취급 및 보관, 광고 / 마케팅 업무대행<br>
+                    보유 및 이용기간 : 수집 및 동의일로부터 5년
+                    <br><br>
+                    7. 개인정보 제공자 및 법정대리인의 권리와 그 행사방법
+                    <br><br>
+                    가. 이용자 및 법정대리인은 언제든지 등록되어 있는 자신 혹은 당해
+                    만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며, 동의철회(가입해지)를 요청할 수도 있습니다.<br><br>
+
+                    나. 이용자가 개인정보의 오류에 대한 정정을 요청하신 경우에는
+                    정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다.
+                    또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는
+                    정정 처리결과를 제3자에게 지체없이 통지하여 정정이 이루어지도록 하겠습니다.<br><br>
+
+                    다. 귀하는 회사가 처리하는 귀하의 개인정보에 대한 열람을 요구할 수 있습니다.
+                    다만, 다음의 경우에는 그 열람이 제한될 수 있습니다.<br>
+                    1) 법률에 따라 열람이 금지되거나 제한되는 경우<br>
+                    2) 다른 사람의 생명∙신체를 해할 우려가 있거나 다른 사람의 재산과 그
+                    밖의 이익을 부당하게 침해할 우려가 있는 경우<br><br>
+
+                    라. 귀하는 언제든지 회사에 대하여 개인정보 수집∙이용∙제공 등의 동의를 철회할 수 있습니다.<br><br>
+
+                    8. 인터넷 접속정보파일(cookie)의 운영에 관한 사항<br><br>
+
+                    가. 쿠키 등 사용 목적<br>
+                    이용자의 접속 빈도나 방문 시간 등을 분석,
+                    이용자의 취향과 관심분야를 파악 및 자취 추적,
+                    각종 이벤트 참여 정도 및 방문 회수 파악 등을 통한 타겟 마케팅 및 맞춤 서비스 제공
+                    <br><br>
+                    나. 쿠키의 설치∙운영 및 그 거부방법<br>
+                    고객은 쿠키에 대한 선택권이 있습니다.
+                    웹 브라우저 상단의 "도구> 인터넷 옵션 탭에서 모든 쿠키를 다 받아들이거나,
+                    쿠키가 설치될 때 통지를 보내도록 하거나, 아니면 모든 쿠키를 거부할 수 있는 선택권을 가질 수 있습니다.
+                    단, 고객에게서 쿠키설치를 거부하였을 경우 서비스 이용에 불편이 있거나, 서비스 제공에 어려움이 있을 수 있습니다.<br><br>
+
+                    9. 개인정보보호를 위한 기술적/관리적 대책<br><br>
+
+                    - 회사는 귀하의 개인정보를 취급함에 있어 개인정보가 분실, 도난, 누출, 변조 또는 훼손되지 않도록 안전성 확보를 위하여
+                    다음과 같은 기술적/관리적 대책을 강구하고 있습니다.<br>
+                    - 회사는 백신프로그램을 이용하여 컴퓨터바이러스에 의한 피해를 방지하기 위한 조치를 취하고 있습니다.
+                    백신프로그램은 주기적으로 업데이트되며 갑작스런 바이러스가 출현할 경우
+                    백신이 나오는 즉시 이를 제공함으로써 개인정보가 침해되는 것을 방지하고 있습니다.
+                    <br><br>
+                    - 해킹 등에 의해 귀하의 개인정보가 유출되는 것을 방지하기 위해,
+                    외부로부터의 침입을 차단하는 장치를 이용하고 있으며,
+                    각 서버마다 침입탐지시스템을 설치하여 24시간 침입을 감시하고 있습니다.
+                    <br><br>
+                    - 회사는 암호 알고리즘을 이용하여 네트워크상의
+                    개인정보를 안전하게 전송할 수 있는 보안장치(SSL 또는 SET)를 채택하고 있습니다.
+                    <br><br>
+                        - 당사는 회원의 개인정보에 대한 접근 권한을 서비스 제공을 위해
+                    필요한 최소한의 인원으로 제한하고 있습니다.
+                    업무 특성상 개인정보를 취급할 수 있는 최소한의 인원에 해당하는 자는 다음과 같습니다.<br>
+                    참여자를 직접 상대하여 마케팅 업무를 수행하는 자.
+                    개인정보관리책임자 및 담당자 등 개인정보관리업무를 수행하는 자.
+                    기타 업무상 개인정보의 취급이 불가피한 자.
+                    퇴사 또는 부서 이동 등 개인정보취급자가 변경될 경우 즉시 해당 계정을 통한 개인정보 접근 권한을 말소하고 있습니다. 또한 개인정보를 취급하는 직원을 대상으로 정기적인 개인정보보안/관리 교육을 실시하고 있으면 이를 통해 개인정보취급자들이 항상 최상의 보안마인드를 가지도록 합니다.
+                    개인정보관련 취급자의 업무 인수인계는 보안이 유지된 상태에서 이루어지며, 입사 및 퇴사 이후 개인 정보 사고에 대한 책임을 명확히 하고 있습니다.
+                    <br><br>
+                    10. 개인정보관리책임자
+                    <br><br>
+                    귀하의 개인정보를 보호하고 관련한 불만을 처리하기 위하여
+                    회사는 개인정보관리책임자를 두어 귀하의 개인정보를 관리하고 있으며
+                    개인정보보호와 관련하여 귀하가 의견과 불만을 제기할 수 있는 창구를 개설하고 있습니다.
+                    귀하의 개인정보와 관련한 문의사항 및 불만사항이 있으시면
+                    아래의 개인정보관리 책임자에게 연락 주시면 즉시 조치하여 처리 결과를 통보하겠습니다.
+                    <br><br>
+                    [개인정보관리책임자]<br>
+                    이 름 : 남현석<br>
+                    이메일 : webmaster0312@nate.com<br>
+                    <br><br>
+                    11. 고지의 의무<br>
+                    현 개인정보처리방침의 내용 추가, 삭제 및 수정이 있을 시에는 개정 최소 7일전부터 홈페이지 '공지사항'을 통해 고지할 것입니다.
+                    다만, 개인정보의 수집 및 활용, 제3자 제공 등과 같이 이용자 권리의 중요한 변경이 있을 경우에는 최소 30일전에 고지합니다.
+                        <br><br>
+                    개인정보 처리방침 공고일자 : 2020년 12월 18일<br>
+                    개인정보 처리방침 시행일자 : 2020년 12월 25일
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .pri_modal_wrap2 h3 {background:#000; color:yellow; padding:15px; text-align:center;}
+
+        .pri_modal_wrap2{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 99999999999; display: none;}
+
+        .pri_modal_inner2{position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);width: 750px; height: 500px; background: #eee; border: 10px solid #ccc; overflow-X:hidden; overflow-y: scroll;}
+        .pri_modal_txt2 p{
+            padding: 20px; line-height:1.3rem; 
+        }
+        .pri_modal_txt22 p{
+            padding: 20px; line-height:1.2rem; 
+        }
+        .agree_close2 {
+            position: sticky;
+            width: 30px;
+            height: 30px;
+            top: 8px;
+            left:670px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pri_modal_inner2 h3 {
+            margin-top: -30px;
+        }
+        .agree_close2 > div{
+            width: 3px;
+            height: 30px;
+            background: #aaa;
+            position: absolute;
+        }
+        .agree_close2 div {
+            transform: rotate(45deg);
+        }
+        .agree_close2 div:last-child {
+            transform: rotate(-45deg);
+        }
+
+        .touch-none2 {touch-action:none; height: 100%; min-height: 100%; overflow:hidden;}
+
+        body > div.pri_modal_wrap > div > div.pri_modal_inner1 > h3 { margin: 0; }
+
+    </style>
+
+    <script>
+        $('.agree_close2').click(function(){
+            $('.pri_modal_wrap2').hide();
+            $('body').removeClass('touch-none');
+        })
+        $('.privacy2').click(function(){
+            $('.pri_modal_wrap2').show();
+            $('body').addClass('touch-none');
+        })
+
+        $('.pri_modal_wrap2').click(function(){
+            $('.pri_modal_wrap2').hide();
+            $('body').removeClass('touch-none');
+        })
+
+        $('.pri_modal_inner2').click(function(e){
+            e.stopPropagation();
+        })
+    </script>
+
+    <style>
+    /*보험료 산출 텍스트 css*/
+        .cost_popup_wrap {
+            position: fixed;		
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 500px;
+            padding: 50px;
+            box-sizing: border-box;
+            background: #fff;
+            line-height: 50px;
+            z-index: 9999999;
+            display: none;
+        }
+
+        .cost_popup_wrap p {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .cust_name_2 {
+            font-family: 'Pretendard'; 
+            font-size: 24px; 
+            text-decoration: underline; 
+            text-underline-position: under; 
+            font-weight: bold;
+        }
+        
+        .cust_money_2{ 
+            font-family: 'Pretendard'; 
+            font-size: 24px; 
+            text-decoration: underline; 
+            text-underline-position: under; 
+        }
+
+        #cost_background { 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0,0,0,0.5); 
+            position: fixed;
+            left: 0; 
+            top:0; 
+            z-index: 999999; 
+            display: none;
+        }
+
+        .cost_btn {
+            cursor: pointer;
+            background: var(--costBtncolor) ;
+            color: #fff;
+            font-size: 20px;
+            margin: 0 auto;
+            width: 194px;
+            height: 44px;
+            line-height: 46px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .cost_popup_wrap > .close { 
+            position: absolute; 
+            width: 35px;
+            height: 35px;
+            top: 12px; 
+            right: 15px;
+            cursor: pointer; 
+        }
+
+        .cost_popup_wrap >.close > div { 
+            width: 3px; 
+            height: 30px;
+            background: #000;
+            position: absolute; 
+            top: 3px; 
+            left: 16px; 
+        }
+
+        .cost_popup_wrap > .close > div:nth-child(1) { 
+            transform: rotate(45deg); 
+        }
+
+        .cost_popup_wrap > .close > div:nth-child(2) {
+            transform: rotate(-45deg); 
+        }
+
+        .notScroll {
+            overflow: hidden;
+            width: 100%;
+            height: 100vh;
+            touch-action:none;
+        }
+
+        .cust_name_2{position: relative; left:0; top: 0;}
+        .cust_money_2{color: #000;}
+
+        /*아래부터 보험 산출 클릭 시 나오는 모달창에 대한 css*/
+        .form-set div span.phone_num{color: #aaa;color: #000;font-weight:bold;width: 150px;font-size: 18px;line-height: 37px;}
+        #inputform_2{width: auto;}
+        .form-set #cellverify_auth_code{border: none; width: 300px; border-bottom: 1px solid #ddd; height: 41px; box-sizing: border-box;display: block;}
+        .form-set .inputform_2_inner{margin: 0; border-bottom: none; display: block;}
+        .form-set .not_form_div{margin: 0; border-bottom: none;}
+        .form-set .dflex{display: flex; justify-content: center; align-items: center;}
+        
+        .form-set #input_screen{background-color: #555;}
+        .form-set .inputform_2_space{margin-top: 20px; margin-bottom: 40px; border: none; display: block;}
+        input#cellverify_auth_code{font-size: 15px;}
+        
+        .form-set #input_screen, .form-set #send_data, 	.form-set #input_screen, .form-set #send_data_price{height: 41px; width: 85px;border:none; cursor:pointer; background: var(--costBtncolor); color: #fff; font-size: 16px; padding: 5px; box-sizing: border-box; font-family: 'Pretendard'; line-height: 1px;}
+        #re_send_date{height: 41px; width: 85px;border:none; cursor:pointer; background: #333; color: #fff; font-size: 16px; padding: 5px; box-sizing: border-box; font-family: 'Pretendard' ;border-bottom: none !important; line-height: 1px; }
+
+        .cost_popup_wrap_title{font-family: 'Pretendard'; font-weight: bold; width: 100%; background: #eee; position: absolute; left: 0; top: 0; padding-left: 30px; box-sizing: border-box; height: 60px; line-height: 61px; font-size: 18px;}
+
+        .phone_num{display: block;}
+        .num_check{border: none !important; display: flex; justify-content: space-between;}
+
+        .form-set .phone_num_sub{display: block ; width: 100%; line-height: 1; margin-bottom: 20px; color: #888; font-size: 16px;}
+        .form-set #mobile1_num_check{width: 90px; border: 0; border-bottom: 1px solid #ddd;}
+        .form-set #mobile2_num_check{width: 210px; border: 0; border-bottom: 1px solid #ddd;}
+        .form-set .form-check{color: #222;margin-top: 1px;border: none;border-bottom: 1px solid  #ddd;background: none;font-family:'Pretendard';vertical-align: top;width: 64px;font-weight: bold;outline: none;border-radius: none; padding: 7px -1px; font-size: 14px; height: 40px;}
+
+        #mobile1_num_check{color: #000 !important; font-size: 15px;}
+        #mobile2_num_check{color: #000 !important; font-size: 15px;}
+
+    </style>
+
+    <div id = "cost_background"></div>
+    <input type="hidden" id="hidden_mobile1" name="hidden_mobile1" value="">
+    <input type="hidden" id="hidden_mobile2" name="hidden_mobile2" value="">
+    <div class ="cost_popup_wrap">
+        <h2 class="cost_popup_wrap_title">SMS 인증</h2>
+        <div id="inputform_2" class="form-set" form action="" target="_self" >
+            <h2 class="inputform_2_title" style="text-align: center; font-family: 'Pretendard'; width: 100%; letter-spacing: -1px; font-size: 18px; margin-top: 40px; font-weight: 500; color: #888">고객님의 연락처로 인증번호가 발송되었습니다.</h2>
+            <div class="inputform_2_inner">	
+                
+                <div class="inputform_2_space">
+                    <span class="phone_num">인증번호 확인</span>
+                    <span class="phone_num_sub">발송받은 인증번호를 입력해주세요.</span>	
+                    <div class="num_check">
+                        <input type="tel" class="form-all form-check" id="cellverify_auth_code" name="cellverify_auth_code" value="" placeholder="예) 5014"  maxlength="4" oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
+                        <input type="button" id="send_data" value="확인"></input>				
+                    </div>
+                </div>
+                <div class="inputform_2_space">
+                    <span class="phone_num">인증번호 재인증</span>
+                    <span class="phone_num_sub">10초가 지났는데 인증번호가 도착하지 않으셨나요?</span>
+                    <div class="num_check">
+                        <select id="mobile1_num_check" name="mobile1_num_check" class="form-number form-all">
+                            <option value="010">010</option>
+                            <option value="011">011</option>
+                            <option value="016">016</option>
+                            <option value="017">017</option>
+                            <option value="018">018</option>
+                            <option value="019">019</option>
+                        </select>
+                        <input type="tel" class="form-number form-all" id="mobile2_num_check" name="mobile2_num_check" maxlength="8" placeholder="'-'를 제외해주세요."  oninput="this.value=this.value.replace(/[^0-9]/g,'')" />
+                        <input type="button" id="re_send_date"value="재발송">					
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sms_after_modal" style="display: none;">
+            <p>
+                <span class="cust_name cust_name_2">○○○</span> 님의 <br>
+                월 납입보험료는 총 <span class="cust_money cust_money_2">***원</span> 입니다.
+            </p> 
+            <div class="cost_btn">확인</div>
+        </div>
+        <div class="close">
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <script>
+        $('.form-check').focus(function(){
+            $('.form-check').css('border-bottom', '1px solid var(--costBtncolor)');
+        });
+        $('.form-check').blur(function(){
+            $('.form-check').css('border-bottom', '1px solid #ddd');
+            $(this).css('color', '#222');
+        });
+
+        $(function(){
+            //모달의 X버튼이나 확인버튼 클릭 시
+            $('.cost_btn, .cost_popup_wrap > .close').click(function(){
+                $('.cost_popup_wrap').fadeOut();
+                $("body").removeClass('notScroll');
+                $('#cost_background').fadeOut();
+                $('.sms_after_modal').fadeOut();
+
+                $("#customer_name").val('');
+                $("#customer_birth").val('');
+                $("#mobile2").val('');
+                $("#cellverify_auth_code").val('');
+            });
+        });
+
+        // [확인] 버튼을 Enter키로 동작하기
+        const mobileValueReinput = document.getElementById('cellverify_auth_code');
+        const checkButtonElem = document.querySelector('.cost_popup_wrap .num_check input[type="button"]');
+        mobileValueReinput.addEventListener('keydown', pressEnter);
+        function pressEnter(e) {
+            if (e.keyCode == 13) {
+                checkButtonElem.click();
+            }
+        }
+
+    </script>
+
+    <script src="./js/main.js"></script>
+    <script src="./js/form.js"></script>
+
+  </body>
+</html>
